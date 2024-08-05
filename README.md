@@ -2,6 +2,12 @@
 
 It is SecretFinder changed by r0b0ts.
 
+# Upgrade Point
+
+The origin code of SecretFinder can not read all js endpoints in a file not well. So, when a file containing a large amount of js endpoints is turned over to the input value, the results have not been successfully produced.(origin code: https://github.com/m4ll0k/SecretFinder)
+
+Finally, I wanted SecretFinder can get all js endpoints and validate the js endpoints in a file successfully. Because I had the js endpoints from Burp-Suite and my web crawling methology.
+
 # Help
 ```
 usage: SecretFinder.py [-h] [-e] [-i INPUT] [-f FILE] [-o OUTPUT] [-r REGEX] [-b]
@@ -40,11 +46,4 @@ optional arguments:
 # Usage
 
 `python3 SecretFinder.py -f ~/js_endpoints -o cli`
-
-# Upgrade Point
-
-The origin code of SecretFinder can not read all js endpoints in a file not well. So, when a file containing a large amount of js endpoints is turned over to the input value, the results have not been successfully produced.(origin code: https://github.com/m4ll0k/SecretFinder)
-
-Finally, I wanted SecretFinder can get all js endpoints and validate the js endpoints in a file successfully. Because I had the js endpoints from Burp-Suite and my web crawling methology.
-
 
