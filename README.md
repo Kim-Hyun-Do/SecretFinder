@@ -39,9 +39,9 @@ optional arguments:
 
 # Usage
 
-python3 SecretFinder.py -f ~/js_endpoints -o cli
+`python3 SecretFinder.py -f ~/js_endpoints -o cli`
 
-# Changed Point
+# Upgrade Point
 
 The origin code of SecretFinder can not read all js endpoints in a file not well. So, when a file containing a large amount of js endpoints is turned over to the input value, the results have not been successfully produced.(origin code: https://github.com/m4ll0k/SecretFinder)
 
